@@ -1,5 +1,5 @@
-## Configuração básica para API nodeJS
-# Rodar comandos no terminal
+# Configuração básica para API nodeJS
+## Rodar comandos no terminal
 Inicializa gerenciador de pacotes
 ```
 npm init -y
@@ -8,7 +8,7 @@ Inicia o git
 ```
 git init
 ```
-# Instalação de pacotes
+## Instalação de pacotes
 Instalar typescript e ts-node (transpilador)
 ```
 npm i -D tsc typescript ts-node
@@ -33,7 +33,7 @@ Instalar dotenv para gerenciar variaveis de ambiente
 ```
 npm -D dotenv
 ```
-# Gerenciar arquivos
+## Gerenciar arquivos
 Criar arquivo .gitignore
 ```
 nano .gitignore
@@ -51,7 +51,7 @@ Colar no arquivo .env
 ```
 PORT=3333
 ```
-# Estrutura do projeto
+## Estrutura do projeto
 Criar pasta src
 ```
 mkdir src
@@ -68,7 +68,7 @@ Adicionar script no arquivo package.json
 ```
 "start:dev": "nodemon --watch 'src/' --exec ts-node src/server.ts -e ts"
 ```
-# Testar servidor
+## Testar servidor
 Colar no arquivo server.ts
 ```
 import express from 'express';
@@ -85,11 +85,11 @@ app.get('/', (request, response) => {
 
 app.listen(port, () => console.log(`listening on port ${port}!`))
 ```
-# Rodar o servidor
+## Rodar o servidor
 ```
 npm run start:dev
 ```
-# Comitar codigo
+## Comitar codigo
 ```
 git add .
 ```
